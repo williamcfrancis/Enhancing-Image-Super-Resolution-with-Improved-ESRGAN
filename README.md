@@ -1,3 +1,11 @@
+# Improved ESRGAN for Image Super Resolution
+
+Image Super-Resolution refers to the conversion of a low-resolution image to a high-resolution image. In this
+project, the implementation of ESRGAN is chosen as the baseline to generate a super-resolved image. Multiple experiments
+are then performed to improve upon the results from the baseline and also improve the stability of the GAN while training. It
+is found that when the baseline is modified to have a different set of losses and other normalizations to stabilize the training,
+the perceptual quality increases.
+
 ## Test
 #### Dependencies
 - Python 3
@@ -16,3 +24,4 @@ cd Super-Resolution-with-Improved-ESRGAN
 python validate.py
 ```
 5. The results are in `./results` folder.
+
