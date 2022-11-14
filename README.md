@@ -14,10 +14,6 @@ downsampling factor of 4 and Gaussian blur.
 
 Download the dataset: [DIV2K Dataset](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
 
-## Experiments carried out on the ESRGAN baseline
-
-![Experiments](experiments.PNG)
-
 ## Test
 #### Dependencies
 - Python 3
@@ -51,4 +47,14 @@ cd Super-Resolution-with-Improved-ESRGAN
 2. Run dataset.py to prepare the datasets.
 3. Run train.py
 
+## Experiments carried out on the ESRGAN baseline
 
+![Experiments](experiments.PNG)
+
+## Results
+
+The following images show the comparison of the Low resolution images, images generated using our baseline model ESRGAN and our final model. The LR images are on the left, ESRGAN outputs are in the middle and our model outputs are on the right. The major difference between the performance of our model and the baseline is that it
+generates excessively sharp images which is undesirable as it decreases the perceptual quality of the image. Instead, our model produces smoother images which are more appealing to the human eye and do not look very cartoon-like. The images generated from our model resemble the real life images more closely than the baseline.
+
+![Results](res1.PNG)
+![Results](res2.PNG)
