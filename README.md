@@ -16,7 +16,7 @@ Download the dataset: [DIV2K Dataset](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
 
 ## Experiments carried out on the ESRGAN baseline
 
-![Experiments](experiments.png)
+![Experiments](experiments.PNG)
 
 ## Test
 #### Dependencies
