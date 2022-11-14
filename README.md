@@ -45,7 +45,7 @@ git clone https://github.com/williamcfrancis/Super-Resolution-with-Improved-ESRG
 cd Super-Resolution-with-Improved-ESRGAN
 ```
 2. Run dataset.py to prepare the datasets.
-3. Run trainy
+3. Run train
 ```
 python train.py
 ```
