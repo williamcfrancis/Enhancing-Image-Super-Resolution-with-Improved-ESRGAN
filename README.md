@@ -1,4 +1,4 @@
-# Improved Enhanced Super-Resolution Generative Adversarial Networks for Image Super Resolution
+# Enhanced Super-Resolution Generative Adversarial Networks for Image Super Resolution
 
 Image Super-Resolution refers to the conversion of a low-resolution image to a high-resolution image. In this
 project, the implementation of ESRGAN is chosen as the baseline to generate a super-resolved image. Multiple experiments
