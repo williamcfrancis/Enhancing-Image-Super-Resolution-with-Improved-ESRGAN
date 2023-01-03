@@ -1,15 +1,13 @@
 # Enhanced Super-Resolution Generative Adversarial Networks for Image Super Resolution
+## Overview
+Image Super-Resolution is the task of converting a low-resolution image to a high-resolution one. In this project, we implemented and improved upon the state-of-the-art ESRGAN model to generate super-resolved images with increased stability and perceptual quality.
 
-Image Super-Resolution refers to the conversion of a low-resolution image to a high-resolution image. In this
-project, the implementation of ESRGAN is chosen as the baseline to generate a super-resolved image. Multiple experiments
-are then performed to improve upon the results from the baseline and also improve the stability of the GAN while training. It
-is found that when the baseline is modified to have a different set of losses and other normalizations to stabilize the training,
-the perceptual quality increases.
+We conducted multiple experiments to modify the baseline model, training it on a large dataset. The resulting model produces smooth, realistic images that closely resemble real life and outperform the baseline model.
 
 ## Dataset
 
-For our training dataset, we use DIV2K. This has 800 high definition high
-resolution images collected from the Internet. The low-resolution images are generated using bicubic interpolation with
+For our training dataset, we used DIV2K, which has 800 high definition high
+resolution images collected from the Internet. The low-resolution images are then generated using bicubic interpolation with
 downsampling factor of 4 and Gaussian blur.
 
 Download the dataset: [DIV2K Dataset](https://data.vision.ee.ethz.ch/cvl/DIV2K/)
