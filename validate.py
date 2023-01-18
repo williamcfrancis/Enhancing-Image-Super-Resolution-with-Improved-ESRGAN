@@ -157,7 +157,17 @@ def image_quality_assessment(sr_path: str, hr_path: str) -> Tuple[float, float, 
 
 def main() -> None:
     # Create a super-resolution experiment result folder.
-    import cv2
+    exp_dir    = os.path.join("results", "test", exp_name)
+
+    # Load model.
+    model      = Generator().to(device)
+    model_path = f"results/{exp_name}/g-best.pth"
+
+    # Test data address.
+    lr_dir     = f"data/DIV2K/test/LR"
+    sr_dir     = f"results/test/{exp_name}"
+    hr_dir     = f"data/DIV2K/test/HR"
+    
     if os.path.exists(exp_dir):
         shutil.rmtree(exp_dir)
     os.makedirs(exp_dir)
